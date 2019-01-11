@@ -12,13 +12,16 @@ npm i maxwell-api-client --save
 
 ```javascript
 const maxwell = require('maxwell-api-client-node');
-const client = new maxwell.ApiClient('ACCESS_TOKEN');
+const client = new maxwell.ApiClient();
 
-client.listTeams()
-  .then((data) => {
-    // handle response
-  })
-  .catch((error) => {
-    // handle error
-  });
+client.authenticateCustomer('facebook', 'facebookAccessToken').then(function(data) {
+  const authenticatedClient = new maxwell.ApiClient(data.session_token);
+  authenticatedClient.listTeams()
+    .then((data) => {
+      // handle response
+    })
+    .catch((error) => {
+      // handle error
+    });
+});
 ```
