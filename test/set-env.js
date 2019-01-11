@@ -1,7 +1,6 @@
-'use strict'
+'use strict';
 
-var maxwell = require('./../index.js');
-
-var client = new maxwell.ApiClient('ACCESS_TOKEN');
+const maxwell = require('./../index.js');
+const client = new maxwell.ApiClient('ACCESS_TOKEN');
 
 exports.client = client;

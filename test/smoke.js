@@ -1,12 +1,9 @@
-'use strict'
+'use strict';
 
-var chai = require('chai').assert;
-var maxwell = require('./../index.js');
+const env = require('./set-env.js');
 
-var env = require('./set-env.js');
-
-describe('something', function(){
-  it ('does something', (done) => {
+describe('something', function() {
+  it('does something', (done) => {
     console.log(env);
     done();
   });
