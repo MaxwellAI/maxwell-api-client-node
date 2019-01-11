@@ -1,0 +1,29 @@
+{
+  "name": "maxwell-api-client",
+  "version": "1.0.0",
+  "description": "Node.js Maxwell API Client",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxwellAI/maxwell-api-client-node.git"
+  },
+  "keywords": [
+    "maxwell",
+    "api",
+    "client"
+  ],
+  "author": "Maxwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxwellAI/maxwell-api-client-node/issues"
+  },
+  "homepage": "https://github.com/MaxwellAI/maxwell-api-client-node#readme"
+}
