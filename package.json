@@ -28,7 +28,7 @@
     "api",
     "client"
   ],
-  "author": "Maxwell",
+  "author": "Maxwell (https://maxwell.ai)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MaxwellAI/maxwell-api-client-node/issues"
