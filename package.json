@@ -6,10 +6,15 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
   "scripts": {
-    "test": "npm test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
