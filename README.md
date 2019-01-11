@@ -11,15 +11,14 @@ npm i maxwell-api-client --save
 ## Example
 
 ```javascript
-var maxwell = require('maxwell-api-client');
+const maxwell = require('maxwell-api-client-node');
+const client = new maxwell.ApiClient('ACCESS_TOKEN');
 
-var client = new maxwell.ApiClient('ACCESS_TOKEN');
-
-client.send(new BlueprintList)
-.then((response) => {
-    //handle response
-})
-.catch((error) => {
-    //handle error
-});
+client.listTeams()
+  .then((data) => {
+    // handle response
+  })
+  .catch((error) => {
+    // handle error
+  });
 ```
