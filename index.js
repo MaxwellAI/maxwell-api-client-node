@@ -1,4 +1,10 @@
 'use strict';
 
-exports.errors = require('./lib/errors');
-exports.ApiClient = require('./lib/api-client').ApiClient;
+const apiClient = require('./lib/api-client');
+const errors = require('./lib/errors');
+
+module.exports = {
+  errors,
+  ApiClient: apiClient.ApiClient,
+  StagingApiClient: apiClient.StagingApiClient
+};
